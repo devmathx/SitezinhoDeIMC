@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculador de IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calcule seu IMC</h1>
+    </header>
+
+        <section id="seçao">
+            <fieldset class="grupo">
+                <h2>Adicione seus dados</h2>
+                <div class="campo">
+                    <label><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <h2>Adcione sua data de nascimento:</h2>
+        
+                    <div class="campo">
+                        <label><strong>Dia</strong></label>
+                        <input type="number" name="dia" id="dia">
+                    </div>
+                    <div class="campo">
+                        <label><strong>Mês</strong></label>
+                        <select name="mes" id="mes">
+                            <option disable>Selecione</option>
+                            <option>Janeiro</option>
+                            <option>Fevereiro</option>
+                            <option>Março</option>
+                            <option>Abril</option>
+                            <option>Maio</option>
+                            <option>Junho</option>
+                            <option>Julho</option>
+                            <option>Agosto</option>
+                            <option>Setembro</option>
+                            <option>Outubro</option>
+                            <option>Novembro</option>
+                            <option>Dezembro</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label><strong>Ano</strong></label>
+                        <input type="number" name="ano" id="ano">
+                    </div>
+            </fieldset>
+            <fieldset class="grupo">
+                <h2>Dados para IMC:</h2>
+                <div class="campo">
+                    <label><strong>Altura</strong></label>
+                    <input type="number" name="altura" id="altura">
+                </div>
+                <div class="campo">
+                    <label><strong>Peso</strong></label> 
+                    <input type="number" name="peso" id="peso">
+                </div>
+                <div id="limpa">
+                    <button id="botao" onclick="limpar()">Limpar</button>
+                </div>
+            </fieldset>
+        
+            <div id="botao">
+                <button id="calcula" onclick="calcular()"><strong>Calcular</strong></button>
+            </div>
+        </section>
+        <section>
+                <h2>Resultado:</h2>
+                <div>
+                    <label id="resul">Seu resultado aparecerá aqui!</label> <br>
+                    Classificação: <label id="classific"></label>
+                </div>
+                
+                <!--
+                <div id="salvar">
+                    <input type="submit" value="Salvar dados" id="salvadados" onclick="salvar()">
+                </div> 
+                -->
+        </section>
+
+        <footer>
+            @devmathx
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+</html>

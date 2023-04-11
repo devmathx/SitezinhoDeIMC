@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7f7fff;
+    font-family: Arial;
+    font-size: 1em; 
+}
+
+header {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+fieldset {
+    border: 0;
+}
+
+section {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+section#seçao {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.1em;
+    background-color: #2a2aff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 15px;
+
+}
+
+.campo label {
+    color: rgb(0, 54, 216);
+}
+
+.campo input[type="text"], .campo select, .campo input[type="number"] {
+    padding: 0.2em;
+    display: block;
+    border: 1px solid #4c4cfc;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+input#ano, #mes, #dia {
+    display: inline;
+}
+
+input#dia, #ano {
+    width: 70px;
+}
+
+input#altura, #peso {
+    width: 100px;
+    height: 30px;
+    font-size: 1.6em;
+    padding: 5px;
+}
+
+div#botao {
+    text-align: right;
+}
+
+div#salvar {
+    text-align: center;
+    padding-top: 10px;
+}
+
+div#limpa {
+    float: left;
+    margin-top: 30px;
+}
+
+button#botao {
+    background-color: rgb(202, 201, 255);
+    color: #0000a7;
+    padding: 4px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid #0404e0;
+    font-size: 1em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+button#calcula {
+    background-color: #4c4cfc;
+    color: white;
+    padding: 4px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+    background-color: #4c4cfc;
+    color: white;
+    padding: 4px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #0404e0;
+    font-size: 1em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+button#calcula:hover, button#botao:hover, input[type="submit"]:hover {
+    background-color: #0404e0;
+    color: white;
+}
+
+.campo input[type="number"]:hover, input[type="text"]:hover {
+    background-color: rgb(228, 241, 253);
+} 
+
+footer {
+    color: white;
+    text-align: center;
+}
